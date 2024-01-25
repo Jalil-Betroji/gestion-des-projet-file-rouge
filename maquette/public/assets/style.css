@@ -78,6 +78,8 @@
   
   body {
     color: var(--text);
+    /* width: 120%;
+    background-color: #f4f6f9 !important; */
   }
   
   .app {
@@ -148,7 +150,6 @@
   .project-column-todo {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    width: 120%;
     grid-column: 4/13;
   }
   .project-column-todo-1 {
@@ -401,6 +402,9 @@
       width: 100%;
       display: flex;
     }
+    .task {
+        cursor: move;
+    }
   
     .tag-progress,
   .task-activity {
@@ -444,3 +448,29 @@
       font-size: 25px;
     }
   }
+
+
+
+.modal {
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px dashed green;
+    color: var(--text);
+    display: none;
+}
+.membersList {
+    overflow-y: auto;
+    height: 57%;
+}
+.fullBoardContainer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+.fixedItem {
+    position: fixed !important;
+    z-index: 999;
+}
+.fullWidth {
+    width: 120% !important;
+}

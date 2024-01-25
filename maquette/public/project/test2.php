@@ -8,7 +8,7 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4 fixedItem">
             <!-- Brand Logo -->
             <a href="../home.php" class="brand-link d-flex flex-column align-items-center">
                 <img src="/public/assets/imgs/solicode_tanger_cover.jpg" alt="AdminLTE Logo" class="brand-image"
@@ -114,9 +114,9 @@
 
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper kanban">
+        <div class="content-wrapper ">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
+            <section class="content-header kanban">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
@@ -134,10 +134,10 @@
 
 
             <!-- Main content -->
-            <section class="content">
+            <section class="content fullWidth">
 
                 <!-- Default box -->
-                <div class="card">
+                <div class="card ">
                     <div class="card-header">
 
                         <div class="input-group w-25">
@@ -157,7 +157,7 @@
                         </div>
 
                     </div>
-                    <div class="card-body p-0">
+                    <div class="card-body p-0 ">
                         <!-- test start -->
                         <div class="">
                             <div class="btn-group">
@@ -192,7 +192,7 @@
                                     Standup</button>
                             </div>
                             <div class="project-tasks border-top">
-                                <div class="project-column mt-2 my-2">
+                                <div class="project-column mx-2 my-2">
                                     <div class="btn-group my-2">
                                         <button type="button" class="btn btn-secondary dropdown-toggle"
                                             data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
@@ -203,7 +203,7 @@
                                             <li><a class="dropdown-item" href="#">Statuts</a></li>
                                         </ul>
                                     </div>
-                                    <div class="card p-3">
+                                    <div class="card p-3 membersList">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center gap-2">
                                                 <div>
@@ -349,12 +349,12 @@
                                         <hr class="my-3">
                                     </div>
                                 </div>
-                                <div class="project-column-todo">
-                                    <div class='project-column-todo-1 mt-2 my-2'>
+                                <div class="project-column-todo fullBoardContainer">
+                                    <div class='project-column-todo-1 mt-2 my-2 parent-div'>
                                         <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>À faire</option>
+                                            <h2 class='project-column-heading__title'>À Faire</option>
                                         </div>
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class='task__tags'>
                                                 <div class="task__tags">
                                                     <a href="" class="issue_mention">
@@ -368,17 +368,19 @@
                                             </div>
                                             <p>Konsep hero title yang menarik</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
 
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div>
                                                 <a href="" class="issue_mention">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -388,16 +390,18 @@
                                             </div>
                                             <p>Icon di section our services</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -418,14 +422,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='project-column-doing mx-2 my-2'>
+                                    <div class='project-column-doing mx-2 my-2 parent-div'>
                                         <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>En cours</h2><button
-                                                class='project-column-heading__options'><i
-                                                    class="fas fa-ellipsis-h"></i></button>
+                                            <h2 class='project-column-heading__title'>En Cours</h2>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention en_cours">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -436,16 +438,18 @@
                                             </div>
                                             <p>Replace lorem ipsum text in the final designs</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention en_cours">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -456,16 +460,18 @@
                                             </div>
                                             <p>Create and generate the custom SVG illustrations.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention en_cours">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -476,16 +482,18 @@
                                             </div>
                                             <p>Proof read the legal page and check for and loopholes</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention en_cours">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -496,24 +504,24 @@
                                             </div>
                                             <p>Create the landing page graphics for the hero slider.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class='project-column-validation mx-2 my-2'>
+                                    <div class='project-column-validation mx-2 my-2 parent-div'>
                                         <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>En Validation</h2><button
-                                                class='project-column-heading__options'><i
-                                                    class="fas fa-ellipsis-h"></i></button>
+                                            <h2 class='project-column-heading__title'>En Validation</h2>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention envalidation">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -524,15 +532,17 @@
                                             </div>
                                             <p>Check the company we copied doesn't think we copied them.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention envalidation">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -543,15 +553,17 @@
                                             </div>
                                             <p>Design the about page.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention envalidation">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -562,23 +574,23 @@
                                             </div>
                                             <p>Move that one image 5px down to make Phil Happy.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='project-column-done mx-2 my-2'>
+                                    <div class='project-column-done mx-2 my-2 parent-div'>
                                         <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>Terminé</h2><button
-                                                class='project-column-heading__options'><i
-                                                    class="fas fa-ellipsis-h"></i></button>
+                                            <h2 class='project-column-heading__title'>Terminé</h2>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention done">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -589,16 +601,18 @@
                                             </div>
                                             <p>Send Advert illustrations over to production company.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention done">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -609,16 +623,18 @@
                                             </div>
                                             <p>Dawn wants to move the text 3px to the right.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
+                                                <span>P0</span>
                                                 <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time></span>
                                                 <span class='task__livrable'><a href=""><i
                                                             class="fa-solid fa-code-branch"></i></a></span>
                                             </div>
                                         </div>
 
-                                        <div class='task' draggable='true'>
+                                        <div class='task draggable' draggable='true'>
                                             <div class="task__tags">
                                                 <a href="" class="issue_mention done">
                                                     <i class="far fa-circle nav-icon" aria-hidden="true"></i>
@@ -629,12 +645,17 @@
                                             </div>
                                             <p>Amend the contract details.</p>
                                             <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00">P0</time></span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 / <i
-                                                            class="fa-solid fa-pen"></i></time></span>
+                                                <span>P0</span>
+                                                <span>
+                                                    <time datetime="2021-11-24T20:00:00"><i
+                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
+                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
+
+                                                    </time>
+                                                </span>
                                                 <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
+                                                            class="fa-solid fa-code-branch"></i></a>
+                                                </span>
                                             </div>
                                         </div>
 
