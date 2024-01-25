@@ -36,19 +36,19 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="project/index.php" class="nav-link">
+                                    <a href="../project/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="projects/web/index.php" class="nav-link">
+                                    <a href="../projects/web/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Projets Web</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="projects/mobile/index.php" class="nav-link">
+                                    <a href="../projects/mobile/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Projets Mobiles</p>
                                     </a>
@@ -57,7 +57,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="members/index.php" class="nav-link active">
+                            <a href="../members/index.php" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Membres
@@ -65,13 +65,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="teams/index.php" class="nav-link">
+                            <a href="../teams/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Équipes</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="labels/index.php" class="nav-link">
+                            <a href="../labels/index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Labels
