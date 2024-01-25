@@ -132,7 +132,7 @@
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="home.php">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="../home.php">Accueil</a></li>
                 <li class="breadcrumb-item active">Membres</li>
               </ol>
             </div>
@@ -157,7 +157,7 @@
                   </div>
 
                   <select class="custom-select" id="projectFilter">
-                    <option selected disabled>Filtrer par promo</option>
+                    <option selected disabled>Filtrer par group</option>
                     <option value="projet3">DWB 101</option>
                     <option value="projet3">DWB 102</option>
                     <option value="projet2">DWB 103</option>
@@ -185,7 +185,7 @@
 
               <div class=" p-0">
                 <div class="input-group input-group-sm ">
-                  <input type="text" name="table_search" class="form-control" placeholder="Search">
+                  <input type="text" name="table_search" class="form-control" placeholder="Search" id="membersSearch">
                   <div class="input-group-append">
                     <button type="submit" class="btn btn-default">
                       <i class="fas fa-search"></i>
@@ -200,7 +200,7 @@
             <?php include_once 'table.php' ?>
             <div class="card-footer clearfix" id="example2_paginate">
               <ul class="pagination pagination-sm m-0 float-right">
-                <li class="paginate_button page-item previous disabled" id="example2_previous">
+                <!-- <li class="paginate_button page-item previous disabled" id="example2_previous">
                   <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Précédent</a>
                 </li>
                 <li class="paginate_button page-item active">
@@ -223,7 +223,7 @@
                 </li>
                 <li class="paginate_button page-item next" id="example2_next">
                   <a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Suivant</a>
-                </li>
+                </li> -->
               </ul>
             </div>
 

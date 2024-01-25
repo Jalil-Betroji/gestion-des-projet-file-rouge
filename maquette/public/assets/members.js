@@ -1,5 +1,6 @@
-const tableBody = document.querySelector('tbody');
-const memnbers = [
+const tableBody = document.querySelector("tbody");
+const membersSearch = document.getElementById("membersSearch");
+const members = [
   {
     lastName: "BETROJI",
     firstName: "Jalil",
@@ -7,7 +8,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "Lamchatab",
@@ -16,7 +17,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "Boukhar",
@@ -25,7 +26,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "ACHOUA",
@@ -34,7 +35,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "Ben NASAR",
@@ -43,7 +44,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "LHARAK",
@@ -52,7 +53,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "BOUIK",
@@ -61,7 +62,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "ZAANI",
@@ -70,7 +71,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "GRAIN",
@@ -79,7 +80,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "SARSRI",
@@ -88,7 +89,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "ASSAID",
@@ -97,7 +98,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "DAIFANE",
@@ -106,7 +107,7 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
   {
     lastName: "FAIZ",
@@ -115,46 +116,156 @@ const memnbers = [
     address: "Tanger Ahlan",
     classroom: "Mobile",
     group: "DMB 101",
-    phoneNumber: "0651782276"
+    phoneNumber: "0651782276",
   },
 ];
+const membersPerPage = 5;
+let currentPage = 1;
 
-for(let i=0 ; i<memnbers.length;i++){
-  tableBody.innerHTML += `
-  <tr>
-  <td>
-      <a>
-          ${memnbers[i].lastName}
-      </a>
-  </td>
-  <td>
-      <a>
-          ${memnbers[i].firstName}
-      </a>
-  </td>
-  <td class="text-center">
-     ${memnbers[i].birthDate}
-  </td>
-  <td class="project_progress">
-      ${memnbers[i].address}
-  </td>
-  <td class="project-state text-center">
-      ${memnbers[i].classroom}
-  </td>
-  <td class="project-actions text-center">
-      ${memnbers[i].classroom}
-  </td>
-  <td>
-      ${memnbers[i].phoneNumber}
-  </td>
-  <td class="project-actions text-center">
-      <a class="btn btn-info btn-sm" href="#">
-      <i class="fa-solid fa-list-check"></i>
-      </a>
-      <a class="btn btn-danger btn-sm" href="#">
-      <i class="fa-solid fa-triangle-exclamation"></i>
-      </a>
-  </td>
-</tr>
-  `
+function displayMembers(startIndex, endIndex) {
+  tableBody.innerHTML = "";
+
+  for (let i = startIndex; i < endIndex; i++) {
+    if (i >= members.length) {
+      break;
+    }
+
+    tableBody.innerHTML += `
+        <tr>
+            <td><a>${members[i].lastName}</a></td>
+            <td><a>${members[i].firstName}</a></td>
+            <td class="text-center">${members[i].birthDate}</td>
+            <td class="project_progress">${members[i].address}</td>
+            <td class="project-state text-center">${members[i].classroom}</td>
+            <td class="project-actions text-center">${members[i].classroom}</td>
+            <td>${members[i].phoneNumber}</td>
+            <td class="project-actions text-center">
+                <a class="btn btn-info btn-sm" href="#">
+                    <i class="fa-solid fa-list-check"></i>
+                </a>
+                <a class="btn btn-danger btn-sm" href="#">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </a>
+            </td>
+        </tr>`;
+  }
 }
+
+function updatePagination() {
+  const paginationDiv = document.querySelector(".pagination");
+  const totalPages = Math.ceil(members.length / membersPerPage);
+
+  let paginationHTML = `
+      <li class="paginate_button page-item previous ${
+        currentPage === 1 ? "disabled" : ""
+      }" id="prevPage">
+        <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Précédent</a>
+      </li>
+    `;
+
+  for (let i = 1; i <= totalPages; i++) {
+    paginationHTML += `
+        <li class="paginate_button page-item ${
+          currentPage === i ? "active" : ""
+        }" id="page-${i}">
+          <a href="#" data-page="${i}" class="page-link">${i}</a>
+        </li>
+      `;
+  }
+
+  paginationHTML += `
+      <li class="paginate_button page-item next ${
+        currentPage === totalPages ? "disabled" : ""
+      }" id="nextPage">
+        <a href="#" aria-controls="example2" data-dt-idx="${
+          totalPages + 1
+        }" tabindex="0" class="page-link">Suivant</a>
+      </li>
+    `;
+
+  paginationDiv.innerHTML = paginationHTML;
+
+  // Event listener for pagination links
+  const pageLinks = document.querySelectorAll(
+    ".paginate_button.page-item:not(.previous):not(.next) a"
+  );
+  pageLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const clickedPage = parseInt(event.target.dataset.page);
+      if (clickedPage !== currentPage) {
+        currentPage = clickedPage;
+        const startIndex = (currentPage - 1) * membersPerPage;
+        const endIndex = startIndex + membersPerPage;
+        displayMembers(startIndex, endIndex);
+        updatePagination();
+        membersSearch.value = "";
+      }
+    });
+  });
+}
+
+displayMembers(0, membersPerPage);
+updatePagination();
+
+document.getElementById("nextPage").addEventListener("click", () => {
+  const totalPages = Math.ceil(members.length / membersPerPage);
+
+  if (currentPage < totalPages) {
+    currentPage++;
+    const startIndex = (currentPage - 1) * membersPerPage;
+    const endIndex = startIndex + membersPerPage;
+    displayMembers(startIndex, endIndex);
+    updatePagination();
+    membersSearch.value = "";
+  }
+});
+
+document.getElementById("prevPage").addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    const startIndex = (currentPage - 1) * membersPerPage;
+    const endIndex = startIndex + membersPerPage;
+    displayMembers(startIndex, endIndex);
+    updatePagination();
+    membersSearch.value = "";
+  }
+});
+
+membersSearch.addEventListener("input", () => {
+  tableBody.innerHTML = "";
+
+  const searchTerm = membersSearch.value.toLowerCase();
+
+  for (let i = 0; i < members.length; i++) {
+    const memberLastName = members[i].lastName.toLowerCase();
+    const memberFirstName = members[i].firstName.toLowerCase();
+
+    if (
+      memberLastName.includes(searchTerm) ||
+      memberFirstName.includes(searchTerm)
+    ) {
+      tableBody.innerHTML += `
+        <tr>
+            <td><a>${members[i].lastName}</a></td>
+            <td><a>${members[i].firstName}</a></td>
+            <td class="text-center">${members[i].birthDate}</td>
+            <td class="project_progress">${members[i].address}</td>
+            <td class="project-state text-center">${members[i].classroom}</td>
+            <td class="project-actions text-center">${members[i].classroom}</td>
+            <td>${members[i].phoneNumber}</td>
+            <td class="project-actions text-center">
+                <a class="btn btn-info btn-sm" href="#">
+                    <i class="fa-solid fa-list-check"></i>
+                </a>
+                <a class="btn btn-danger btn-sm" href="#">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </a>
+            </td>
+        </tr>`;
+    }
+    if (searchTerm === "") {
+      displayMembers(0, membersPerPage);
+    }
+  }
+});
