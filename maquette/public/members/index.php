@@ -4,7 +4,7 @@
   <!-- Site wrapper -->
   <div class="wrapper">
     <!-- Navbar -->
-    <?php include_once './layouts/nav.php' ?>
+    <?php include_once '../layouts/nav.php' ?>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->

@@ -6,7 +6,7 @@
 
 
         <!-- nav -->
-        <?php include_once './layouts/nav.php' ?>
+        <?php include_once '../layouts/nav.php' ?>
 
         <!-- aside -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
