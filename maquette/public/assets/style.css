@@ -15,7 +15,7 @@
     display: inline-block;
     color: black;
 }
-.kanban button {
+/* .kanban button {
     padding: 5px 10px; 
 }
 
@@ -42,7 +42,7 @@
 .card-title {
     text-align: center !important;
     float: none;
-}
+} */
 
 
 
@@ -449,15 +449,6 @@
     }
   }
 
-
-
-.modal {
-    background-color: var(--white);
-    border-radius: 10px;
-    border: 1px dashed green;
-    color: var(--text);
-    display: none;
-}
 .membersList {
     overflow-y: auto;
     height: 57%;
