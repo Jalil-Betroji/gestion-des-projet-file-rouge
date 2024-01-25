@@ -11,7 +11,7 @@
         <!-- aside -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="../home.php" class="brand-link d-flex flex-column align-items-center">
+            <a href="home.php" class="brand-link d-flex flex-column align-items-center">
                 <img src="/public/assets/imgs/solicode_tanger_cover.jpg" alt="AdminLTE Logo" class="brand-image"
                     style="opacity: .8">
                 <p class="brand-text font-weight-light">Gestion des Projets</p>
@@ -26,7 +26,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item">
+                        <li class="nav-item active ">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -36,78 +36,28 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="projects.php" class="nav-link active">
+                                    <a href="project/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
+                                    <a href="projects/web/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Projets Web</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
+                                    <a href="projects/mobile/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Projets Mobiles</p>
                                     </a>
                                 </li>
+
                             </ul>
                         </li>
-
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Équipes
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="./index.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Technique</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Fonctionnel</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Conception</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Codage</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Test</p>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </li>
                         <li class="nav-item">
-                            <a href="projectManagment.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Gestion de projet
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="projectManagment.php" class="nav-link active">
+                            <a href="members/index.php" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Membres
@@ -115,15 +65,21 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link">
+                            <a href="teams/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Équipes</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="labels/index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Labels
                                 </p>
                             </a>
                         </li>
-                    </ul>
 
+                    </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>

@@ -40,26 +40,43 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
+                                    <a href="projects/web/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Projets Web</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./index3.html" class="nav-link">
+                                    <a href="projects/mobile/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Projets Mobiles</p>
                                     </a>
                                 </li>
+
                             </ul>
                         </li>
-
+                        <li class="nav-item">
+                            <a href="members/index.php" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Membres
+                                </p>
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a href="teams/index.php" class="nav-link active">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Équipes</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="labels/index.php" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Labels
+                                </p>
+                            </a>
+                        </li>
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
