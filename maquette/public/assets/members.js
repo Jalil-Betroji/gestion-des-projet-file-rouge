@@ -1,5 +1,7 @@
 const tableBody = document.querySelector("tbody");
 const membersSearch = document.getElementById("membersSearch");
+const undeisiplinedMember = document.getElementById('undeisiplinedMember');
+const selectTeachers = document.getElementById('selectTeachers');
 const members = [
   {
     lastName: "BETROJI",
@@ -143,7 +145,7 @@ function displayMembers(startIndex, endIndex) {
                 <a class="btn btn-info btn-sm" href="#">
                     <i class="fa-solid fa-list-check"></i>
                 </a>
-                <a class="btn btn-danger btn-sm" href="#">
+                <a class="btn btn-danger btn-sm" href="review.php">
                     <i class="fa-solid fa-triangle-exclamation"></i>
                 </a>
             </td>
@@ -205,7 +207,8 @@ function updatePagination() {
   });
 }
 
-displayMembers(0, membersPerPage);
+if(tableBody != null){
+  displayMembers(0, membersPerPage);
 updatePagination();
 
 document.getElementById("nextPage").addEventListener("click", () => {
@@ -269,3 +272,42 @@ membersSearch.addEventListener("input", () => {
     }
   }
 });
+}
+
+
+
+// review page logic
+const teachersList = [
+  {
+    lastName:"Chebab",
+    firstName:"Fatin",
+  },
+  {
+    lastName:"Bouziane",
+    firstName:"Imane",
+  },
+  {
+    lastName:"Souklabi",
+    firstName:"Abdelatif",
+  },
+  {
+    lastName:"Essarraj",
+    firstName:"Fouad",
+  },
+  {
+    lastName:"Masaoudi",
+    firstName:"Masaoudi",
+  },
+]
+if(undeisiplinedMember != null){
+  for(let i=0 ; i<members.length;i++){
+   undeisiplinedMember.innerHTML += `
+   <option value="${members[i].lastName + ' ' + members[i].firstName}">${members[i].lastName +' '+ members[i].firstName}</option>`
+  }
+}
+if(selectTeachers != null){
+  for(let i=0 ; i<teachersList.length;i++){
+    selectTeachers.innerHTML += `
+   <option value="${teachersList[i].lastName + ' ' + teachersList[i].firstName}">${teachersList[i].lastName +' '+ teachersList[i].firstName}</option>`
+  }
+}
