@@ -4,7 +4,8 @@
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
-        <?php include_once './layouts/nav.php' ?>
+        <?php include_once '../layouts/nav.php' ?>
+
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
@@ -96,10 +97,21 @@
                             <h1>Projets</h1>
                         </div>
                         <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="home.php">Accueil</a></li>
-                                <li class="breadcrumb-item active">Projets</li>
-                            </ol>
+
+                            <div class="input-group w-50 float-sm-right">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="projectFilter">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </label>
+                                </div>
+
+                                <select class="custom-select" id="projectFilter">
+                                    <option selected disabled>Methode de travaile</option>
+                                    <option value="WaterFall">WaterFall</option>
+                                    <option value="Méthode agile">Méthode agile</option>
+                                </select>
+                            </div>
+
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->

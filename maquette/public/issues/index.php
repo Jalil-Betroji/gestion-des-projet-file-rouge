@@ -4,7 +4,7 @@
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
-        <?php include_once '../layouts/nav.php' ?>
+        <?php include_once './layouts/nav.php' ?>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
@@ -56,10 +56,18 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link active">
+                            <a href="../labels/index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Taches
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../labels/index.php" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Issues
                                 </p>
                             </a>
                         </li>
@@ -101,12 +109,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Projets</h1>
+                            <h1>Issues</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="home.php">Accueil</a></li>
-                                <li class="breadcrumb-item active">Projets</li>
+                                <li class="breadcrumb-item active">Issues</li>
                             </ol>
                         </div>
                     </div>
@@ -121,7 +129,7 @@
                         <div class="row mb-2">
                             <div class="col-sm-12">
                                 <div class="float-sm-right">
-                                    <a href="add.php" class="btn btn-primary">Ajouter une tache</a>
+                                    <a href="add.php" class="btn btn-primary">Ajouter une issue</a>
                                 </div>
                             </div>
                         </div>
@@ -195,13 +203,13 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">supprimer une tâche</h4>
+                                <h4 class="modal-title">supprimer un issue</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Êtes-vous sûr de vouloir supprimer cette tâche ?</p>
+                                <p>Êtes-vous sûr de vouloir supprimer cette issue ?</p>
                             </div>
                             <div class="modal-footer justify-content-between">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
