@@ -10,6 +10,7 @@
 <script type='module' src="../assets/main.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
+<script src="https://cdn.tiny.cloud/1/j9fgvnzkpnwd9wtcot805rolqir70j4v4w28bpz6oxl1klka/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 </body>
 

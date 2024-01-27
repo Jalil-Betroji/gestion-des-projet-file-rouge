@@ -106,551 +106,177 @@
             </section>
 
 
-            <!-- Main content -->
             <section class="content fullWidth">
 
-                <!-- Default box -->
+
                 <div class="card ">
-                    <div class="card-header">
-
-                        <div class="input-group w-25">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text" for="projectFilter">
-                                    <i class="fa-solid fa-filter text-dark pr-2"></i>
-                                </label>
-                            </div>
-
-                            <select class="custom-select" id="projectFilter">
-                                <option selected disabled>Filtrer par projet</option>
-                                <option value="projet3">Projet 1</option>
-                                <option value="projet3">Projet 2</option>
-                                <option value="projet2">Projet 3</option>
-                                <option value="projet2">Projet 4</option>
-                            </select>
+                    <div role="row" class="Box-sc-g0xbh4-0 krLHWI" style="display: flex; width: 100%;">
+                        <div colspan="1" role="cell" class="Box-sc-g0xbh4-0"
+                            style="display: inline-block; box-sizing: border-box; width: 60px; position: relative; min-width: 60px; height: 34px;">
                         </div>
-
-                    </div>
-                    <div class="card-body p-0 ">
-                        <!-- test start -->
-                        <div class="">
-                            <div class="btn-group">
-                                <button class="btn btn-light border-0 rounded-0" id="btnTable1"><svg aria-hidden="true"
-                                        focusable="false" role="img" class="mx-2" viewBox="0 0 16 16" width="16"
-                                        height="19" fill="currentColor"
-                                        style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
-                                        <path
-                                            d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z">
-                                        </path>
-                                    </svg>Board</button>
-                                <button class="btn btn-default border-0 rounded-0" id="btnTable2">
-                                    <i class="fa-solid fa-list"></i>
-                                    List
-                                </button>
-                                <button class="btn btn-default border-0 rounded-0" id="btnTable3">
-                                    <svg aria-hidden="true" focusable="false" role="img"
-                                        class="Octicon-sc-9kayk9-0 ddnvSG" viewBox="0 0 16 16" width="16" height="16"
-                                        fill="currentColor"
-                                        style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
-                                        <path
-                                            d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
-                                        </path>
-                                    </svg>
-                                    Backlog</button>
-                                <button class="btn btn-default border-0 rounded-0" id="btnTable3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                        <rect x="0" y="0" width="20" height="20" fill="none" stroke="none" />
-                                        <path fill="black"
-                                            d="M3 11a7 7 0 0 1 13.79-1.71c.476.228.882.576 1.18 1.006a8 8 0 1 0-13.63 6.359a.5.5 0 0 0 .707-.707A6.976 6.976 0 0 1 3 11m11.637-1.874A5.002 5.002 0 0 0 5 11c0 1.378.558 2.627 1.46 3.531a.5.5 0 0 0 .708-.706a4 4 0 1 1 6.57-4.253a2.99 2.99 0 0 1 .899-.446M8 11a2 2 0 1 1 4 0a2 2 0 0 1-4 0m2-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2m7.5 2a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 4.5c0 1.245-1 2.5-3.5 2.5S12 17.75 12 16.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5" />
-                                    </svg>
-                                    Standup</button>
-                            </div>
-                            <div class="project-tasks border-top">
-                                <div class="project-column mx-2 my-2">
-                                    <div class="btn-group my-2">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle"
-                                            data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
-                                            Assignées
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Labels</a></li>
-                                            <li><a class="dropdown-item" href="#">Statuts</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card p-3 membersList">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">Betroji Jalil</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">Ben NASAR Adnan</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">ACHOUA Hamid</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">Boukhar Soufiane</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">Lamchatab Amin</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">LHARAK Adnan</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">BOUIK Hussien</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">ZAANI Hamza</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">GRAIN Reda</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">SARSRI Imrane</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">ASSAID Amina</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">DAIFANE Yasmine</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        style="width: 20px; height: 20px;" class="rounded-circle">
-                                                </div>
-                                                <h3 class="mb-0">FAIZ Safae</h3>
-                                            </div>
-                                            <span class="badge bg-secondary">2</span>
-                                        </div>
-                                        <hr class="my-3">
-                                    </div>
-                                </div>
-                                <div class="project-column-todo fullBoardContainer">
-                                    <div class='project-column-todo-1 mt-2 my-2 parent-div'>
-                                        <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>À Faire</option>
-                                        </div>
-                                        <div class='task draggable' draggable='true'>
-                                            <div class='task__tags'>
-                                                <div class="task__tags">
-                                                    <a href="" class="issue_mention">
-                                                        <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                        Besoin <span>#3</span>
-                                                    </a>
-                                                    <img src="../assets/imgs/25231.png" alt=""
-                                                        class="issue_mention_img">
-
-                                                </div>
-                                            </div>
-                                            <p>Konsep hero title yang menarik</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div>
-                                                <a href="" class="issue_mention">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-
-                                            </div>
-                                            <p>Icon di section our services</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Konsep hero title yang menarik</p>
-                                            <div class='task__stats'>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag"></i>Nov
-                                                        24</time></span>
-                                                <span><i class="fas fa-comment"></i>2</span>
-                                                <span><i class="fas fa-paperclip"></i>3</span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='project-column-doing mx-2 my-2 parent-div'>
-                                        <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>En Cours</h2>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention en_cours">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Replace lorem ipsum text in the final designs</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention en_cours">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Create and generate the custom SVG illustrations.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention en_cours">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Proof read the legal page and check for and loopholes</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention en_cours">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Create the landing page graphics for the hero slider.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class='project-column-validation mx-2 my-2 parent-div'>
-                                        <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>En Validation</h2>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention envalidation">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Check the company we copied doesn't think we copied them.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention envalidation">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Design the about page.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention envalidation">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Move that one image 5px down to make Phil Happy.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='project-column-done mx-2 my-2 parent-div'>
-                                        <div class='project-column-heading my-2'>
-                                            <h2 class='project-column-heading__title'>Terminé</h2>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention done">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Send Advert illustrations over to production company.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention done">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Dawn wants to move the text 3px to the right.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span><time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time></span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a></span>
-                                            </div>
-                                        </div>
-
-                                        <div class='task draggable' draggable='true'>
-                                            <div class="task__tags">
-                                                <a href="" class="issue_mention done">
-                                                    <i class="far fa-circle nav-icon" aria-hidden="true"></i>
-                                                    Besoin <span>#3</span>
-                                                </a>
-                                                <img src="../assets/imgs/25231.png" alt="" class="issue_mention_img">
-
-                                            </div>
-                                            <p>Amend the contract details.</p>
-                                            <div class='task__stats'>
-                                                <span>P0</span>
-                                                <span>
-                                                    <time datetime="2021-11-24T20:00:00"><i
-                                                            class="fas fa-flag mx-2"></i>Nov 24 /<span
-                                                            class="changedAt"><i class="fa-solid fa-pen"></i></span>
-
-                                                    </time>
-                                                </span>
-                                                <span class='task__livrable'><a href=""><i
-                                                            class="fa-solid fa-code-branch"></i></a>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <div class="table-container">
-                                <!-- Table content will be dynamically replaced here -->
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: Title}" aria-sort="none"
+                            style="display: inline-block; box-sizing: border-box; width: 330px; position: relative; min-width: 330px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 hPNYPR"><span class="Text-sc-17v1xeu-0 ewHzJo">Title</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp"><button data-component="IconButton" type="button"
+                                        aria-label="Title column options" data-testid="Title-column-menu-trigger"
+                                        id=":r34:" aria-haspopup="true" tabindex="0" data-size="small"
+                                        data-no-visuals="true" class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg
+                                            aria-hidden="true" focusable="false" role="img"
+                                            class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" width="16"
+                                            height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button></div>
                             </div>
                         </div>
-
-
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: 72326910}" aria-sort="none"
+                            style="display: inline-block; box-sizing: border-box; width: 86px; position: relative; min-width: 86px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 ewdlSd"><span class="Text-sc-17v1xeu-0 ewHzJo">Priorité</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp">
+                                    <div data-testid="grouped-label-Priorité" class="Box-sc-g0xbh4-0 PWfdx"><svg
+                                            aria-hidden="true" focusable="false" role="img" class="Octicon-sc-9kayk9-0"
+                                            viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M16 10.75v2.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-2.5C0 9.784.784 9 1.75 9h12.5c.966 0 1.75.784 1.75 1.75Zm0-8v2.5A1.75 1.75 0 0 1 14.25 7H1.75A1.75 1.75 0 0 1 0 5.25v-2.5C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75Zm-1.75-.25H1.75a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25Zm0 8H1.75a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25Z">
+                                            </path>
+                                        </svg></div><button data-component="IconButton" type="button"
+                                        aria-label="Priorité column options" data-testid="Priorité-column-menu-trigger"
+                                        id=":r36:" aria-haspopup="true" tabindex="0" data-size="small"
+                                        data-no-visuals="true" class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg
+                                            aria-hidden="true" focusable="false" role="img"
+                                            class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" width="16"
+                                            height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: Status}" aria-sort="descending"
+                            style="display: inline-block; box-sizing: border-box; width: 118px; position: relative; min-width: 118px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 ewdlSd"><span class="Text-sc-17v1xeu-0 ewHzJo">Status</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp"><button type="button"
+                                        aria-label="Change sort direction to ascending"
+                                        data-testid="sorted-label-Status" data-size="small" data-no-visuals="true"
+                                        class="types__StyledButton-sc-ws60qy-0 gVtBPS"
+                                        style="--button-color: fg.muted;"><span data-component="buttonContent"
+                                            class="Box-sc-g0xbh4-0 kkrdEu"><span data-component="text"><span
+                                                    style="display: inline-flex; align-items: center; vertical-align: text-bottom;"><svg
+                                                        aria-hidden="true" focusable="false" role="img"
+                                                        class="octicon octicon-sort-desc" viewBox="0 0 16 16" width="16"
+                                                        height="16" fill="currentColor"
+                                                        style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                                        <path
+                                                            d="M0 4.25a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 4.25Zm0 4a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8.25Zm0 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75ZM13.5 10h2.25a.25.25 0 0 1 .177.427l-3 3a.25.25 0 0 1-.354 0l-3-3A.25.25 0 0 1 9.75 10H12V3.75a.75.75 0 0 1 1.5 0V10Z">
+                                                        </path>
+                                                    </svg></span></span></span></button><button
+                                        data-component="IconButton" type="button" aria-label="Status column options"
+                                        data-testid="Status-column-menu-trigger" id=":r38:" aria-haspopup="true"
+                                        tabindex="0" data-size="small" data-no-visuals="true"
+                                        class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg aria-hidden="true"
+                                            focusable="false" role="img" class="octicon octicon-kebab-horizontal"
+                                            viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: 71007654}" aria-sort="none"
+                            style="display: inline-block; box-sizing: border-box; width: 129px; position: relative; min-width: 129px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 hPNYPR"><span class="Text-sc-17v1xeu-0 ewHzJo">Phase</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp"><button data-component="IconButton" type="button"
+                                        aria-label="Phase column options" data-testid="Phase-column-menu-trigger"
+                                        id=":r3a:" aria-haspopup="true" tabindex="0" data-size="small"
+                                        data-no-visuals="true" class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg
+                                            aria-hidden="true" focusable="false" role="img"
+                                            class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" width="16"
+                                            height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: Assignees}" aria-sort="none"
+                            style="display: inline-block; box-sizing: border-box; width: 148px; position: relative; min-width: 148px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 hPNYPR"><span class="Text-sc-17v1xeu-0 ewHzJo">Assignees</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp"><button data-component="IconButton" type="button"
+                                        aria-label="Assignees column options"
+                                        data-testid="Assignees-column-menu-trigger" id=":r3c:" aria-haspopup="true"
+                                        tabindex="0" data-size="small" data-no-visuals="true"
+                                        class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg aria-hidden="true"
+                                            focusable="false" role="img" class="octicon octicon-kebab-horizontal"
+                                            viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: Repository}" aria-sort="none"
+                            style="display: inline-block; box-sizing: border-box; width: 185px; position: relative; min-width: 185px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 hPNYPR"><span class="Text-sc-17v1xeu-0 ewHzJo">Repository</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp"><button data-component="IconButton" type="button"
+                                        aria-label="Repository column options"
+                                        data-testid="Repository-column-menu-trigger" id=":r3e:" aria-haspopup="true"
+                                        tabindex="0" data-size="small" data-no-visuals="true"
+                                        class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg aria-hidden="true"
+                                            focusable="false" role="img" class="octicon octicon-kebab-horizontal"
+                                            viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                        <div role="columnheader" aria-colspan="1" colspan="1" class="Box-sc-g0xbh4-0 jAzdJt readonly"
+                            data-testid="TableColumnHeader{id: Linked pull requests}" aria-sort="none"
+                            style="display: inline-block; box-sizing: border-box; width: 173px; position: relative; min-width: 173px; height: 34px;">
+                            <div class="Box-sc-g0xbh4-0 hPNYPR"><span class="Text-sc-17v1xeu-0 ewHzJo">Linked pull
+                                    requests</span>
+                                <div class="Box-sc-g0xbh4-0 PoRnp"><button data-component="IconButton" type="button"
+                                        aria-label="Linked pull requests column options"
+                                        data-testid="Linked pull requests-column-menu-trigger" id=":r3g:"
+                                        aria-haspopup="true" tabindex="0" data-size="small" data-no-visuals="true"
+                                        class="types__StyledButton-sc-ws60qy-0 fWMZzh"><svg aria-hidden="true"
+                                            focusable="false" role="img" class="octicon octicon-kebab-horizontal"
+                                            viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
+                                            style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                                            <path
+                                                d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z">
+                                            </path>
+                                        </svg></button></div>
+                            </div>
+                        </div>
+                        <div role="columnheader" aria-colspan="1" tabindex="-1" colspan="1"
+                            data-testid="TableColumnHeader{id: add-column}" class="Box-sc-g0xbh4-0 jAzdJt"
+                            style="display: inline-block; box-sizing: border-box; width: 50px; position: relative; min-width: 50px; height: 34px;">
+                            <div>
+                                <button data-component="IconButton" type="button"
+                                    aria-label="Add field" data-testid="column-visibility-menu-trigger"
+                                    data-size="small" data-no-visuals="true"
+                                    ></button>
+                                </div>
+                        </div>
                     </div>
-                    <!-- /.card-body -->
                 </div>
-                <!-- /.card -->
 
             </section>
-            <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
         <?php include_once '../layouts/footer.php' ?>

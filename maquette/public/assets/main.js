@@ -1,4 +1,3 @@
-import "../../node_modules/admin-lte/plugins/jquery/jquery.min.js";
 import "../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js";
 import "../../node_modules/admin-lte/dist/js/adminlte.min.js";
 
@@ -80,7 +79,8 @@ containers.forEach((container) => {
     const draggable = document.querySelector(".dragging");
     if (elementPlacement == null) {
       container.appendChild(draggable);
-      const title = container.querySelector("h2");
+      const parentElement = container.parentElement;
+      const title = parentElement.querySelector(".project-column-heading__title");
       const cardElement = draggable.querySelector("a");
       const changedDate = draggable.querySelector(".changedAt");
       const currentDate = new Date();
@@ -112,7 +112,8 @@ containers.forEach((container) => {
       }
     } else {
       container.insertBefore(draggable, elementPlacement);
-      const title = container.querySelector("h2");
+      const parentElement = container.parentElement;
+      const title = parentElement.querySelector(".project-column-heading__title");
       const cardElement = draggable.querySelector("a");
       const changedDate = draggable.querySelector(".changedAt");
       const currentDate = new Date();
