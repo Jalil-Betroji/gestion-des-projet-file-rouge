@@ -25,7 +25,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item active menu-open">
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -35,7 +35,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../project/index.php" class="nav-link active">
+                                    <a href="../project/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
@@ -54,6 +54,14 @@
                                 </li>
 
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../labels/index.php" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Taches
+                                </p>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="../members/index.php" class="nav-link">
@@ -187,13 +195,13 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">supprimer projet</h4>
+                                <h4 class="modal-title">supprimer une tâche</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Êtes-vous sûr de vouloir supprimer cette projet ?</p>
+                                <p>Êtes-vous sûr de vouloir supprimer cette tâche ?</p>
                             </div>
                             <div class="modal-footer justify-content-between">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
