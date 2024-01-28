@@ -105,7 +105,7 @@
                                     </label>
                                 </div>
 
-                                <select class="custom-select" id="projectFilter">
+                                <select class="custom-select" id="workflowMethod">
                                     <option selected disabled>Methode de travaile</option>
                                     <option value="WaterFall">WaterFall</option>
                                     <option value="Méthode agile">Méthode agile</option>

@@ -96,7 +96,7 @@
                                 <li class="breadcrumb-item active">Projet 1</li>
                             </ol>
                         </div>
-                        <div class="input-group w-25 mt-4">
+                        <div class="input-group w-25 mt-4 mr-2">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="projectFilter">
                                     <i class="fa-solid fa-filter text-dark pr-2"></i>
@@ -108,6 +108,20 @@
                                 <option value="projet3">Projet 2</option>
                                 <option value="projet2">Projet 3</option>
                                 <option value="projet2">Projet 4</option>
+                            </select>
+                        </div>
+                        <div class="input-group w-25 mt-4">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="projectFilter">
+                                    <i class="fa-solid fa-shoe-prints"></i>
+                                </label>
+                            </div>
+                            <select class="custom-select" id="projectFilter">
+                                <option selected disabled>Filtrer par sprint</option>
+                                <option value="sprint3">sprint 1</option>
+                                <option value="sprint3">sprint 2</option>
+                                <option value="sprint2">sprint 3</option>
+                                <option value="sprint2">sprint 4</option>
                             </select>
                         </div>
                     </div>
@@ -129,7 +143,7 @@
                                                 d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z">
                                             </path>
                                         </svg>Board</button>
-                                   
+
                                     <a class="btn bg-false border-0 rounded-0" id="btnTable3" href="backlog.php">
                                         <svg aria-hidden="true" focusable="false" role="img"
                                             class="Octicon-sc-9kayk9-0 ddnvSG" viewBox="0 0 16 16" width="16"
@@ -156,8 +170,7 @@
                                 <div class="project-tasks border-top">
                                     <div class="project-column mx-2 my-2">
                                         <div class="btn-group my-2">
-                                            <button type="button" class="btn btn-secondary" data-mdb-dropdown-init
-                                                data-mdb-ripple-init aria-expanded="false">
+                                            <button type="button" class="btn btn-default">
                                                 Assignées
                                             </button>
                                         </div>
@@ -168,7 +181,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">Betroji Jalil</h3>
+                                                    <h3 class="ml-1 mb-0">Betroji Jalil</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -179,7 +192,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">Ben NASAR Adnan</h3>
+                                                    <h3 class="ml-1 mb-0">Ben NASAR Adnan</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -190,7 +203,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">ACHOUA Hamid</h3>
+                                                    <h3 class="ml-1 mb-0">ACHOUA Hamid</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -201,7 +214,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">Boukhar Soufiane</h3>
+                                                    <h3 class="ml-1 mb-0">Boukhar Soufiane</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -212,7 +225,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">Lamchatab Amin</h3>
+                                                    <h3 class="ml-1 mb-0">Lamchatab Amin</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -223,7 +236,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">LHARAK Adnan</h3>
+                                                    <h3 class="ml-1 mb-0">LHARAK Adnan</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -234,7 +247,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">BOUIK Hussien</h3>
+                                                    <h3 class="ml-1 mb-0">BOUIK Hussien</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -245,7 +258,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">ZAANI Hamza</h3>
+                                                    <h3 class="ml-1 mb-0">ZAANI Hamza</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -256,7 +269,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">GRAIN Reda</h3>
+                                                    <h3 class="ml-1 mb-0">GRAIN Reda</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -267,7 +280,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">SARSRI Imrane</h3>
+                                                    <h3 class="ml-1 mb-0">SARSRI Imrane</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -278,7 +291,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">ASSAID Amina</h3>
+                                                    <h3 class="ml-1 mb-0">ASSAID Amina</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -289,7 +302,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">DAIFANE Yasmine</h3>
+                                                    <h3 class="ml-1 mb-0">DAIFANE Yasmine</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -300,7 +313,7 @@
                                                         <img src="../assets/imgs/25231.png" alt=""
                                                             style="width: 20px; height: 20px;" class="rounded-circle">
                                                     </div>
-                                                    <h3 class="mb-0">FAIZ Safae</h3>
+                                                    <h3 class="ml-1 mb-0">FAIZ Safae</h3>
                                                 </div>
                                                 <span class="badge bg-secondary">2</span>
                                             </div>
@@ -335,8 +348,11 @@
                                                                         class="fa-solid fa-pen"></i></span>
 
                                                             </time></span>
-                                                        <span class='task__livrable'><a href=""><i
-                                                                    class="fa-solid fa-code-branch"></i></a></span>
+                                                        <span
+                                                            class='task__livrable task__livrable-todo btn-default rounded-circle'>
+                                                            <a href="" data-toggle="modal" data-target="#add-livrable">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </a></span>
                                                     </div>
 
                                                 </div>
@@ -358,8 +374,11 @@
                                                                         class="fa-solid fa-pen"></i></span>
 
                                                             </time></span>
-                                                        <span class='task__livrable'><a href=""><i
-                                                                    class="fa-solid fa-code-branch"></i></a></span>
+                                                        <span
+                                                            class='task__livrable task__livrable-todo btn-default rounded-circle'>
+                                                            <a href="" data-toggle="modal" data-target="#add-livrable">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </a></span>
                                                     </div>
                                                 </div>
 
@@ -380,8 +399,11 @@
                                                                 24</time></span>
                                                         <span><i class="fas fa-comment"></i>2</span>
                                                         <span><i class="fas fa-paperclip"></i>3</span>
-                                                        <span class='task__livrable'><a href=""><i
-                                                                    class="fa-solid fa-code-branch"></i></a></span>
+                                                        <span
+                                                            class='task__livrable task__livrable-todo btn-default rounded-circle'>
+                                                            <a href="" data-toggle="modal" data-target="#add-livrable">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -515,8 +537,14 @@
                                                                         class="fa-solid fa-pen"></i></span>
 
                                                             </time></span>
-                                                        <span class='task__livrable'><a href=""><i
-                                                                    class="fa-solid fa-code-branch"></i></a></span>
+                                                        <span class='task__livrable'>
+                                                            <a href="" class="mr-2">
+                                                                <i class="fa-solid fa-code-branch"></i>
+                                                            </a>
+                                                            <a href="" data-toggle="modal" data-target="#validate-task">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </a>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class='task draggable' draggable='true'>
@@ -538,8 +566,14 @@
                                                                         class="fa-solid fa-pen"></i></span>
 
                                                             </time></span>
-                                                        <span class='task__livrable'><a href=""><i
-                                                                    class="fa-solid fa-code-branch"></i></a></span>
+                                                        <span class='task__livrable'>
+                                                            <a href="">
+                                                                <i class="fa-solid fa-code-branch"></i>
+                                                            </a>
+                                                            <a href="" data-toggle="modal" data-target="#validate-task">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </a>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class='task draggable' draggable='true'>
@@ -561,8 +595,14 @@
                                                                         class="fa-solid fa-pen"></i></span>
 
                                                             </time></span>
-                                                        <span class='task__livrable'><a href=""><i
-                                                                    class="fa-solid fa-code-branch"></i></a></span>
+                                                        <span class='task__livrable'>
+                                                            <a href="">
+                                                                <i class="fa-solid fa-code-branch"></i>
+                                                            </a>
+                                                            <a href="" data-toggle="modal" data-target="#validate-task">
+                                                                <i class="fa-solid fa-check"></i>
+                                                            </a>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -662,6 +702,63 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="modal fade" id="add-livrable" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Ajouter livrable</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <label for="exampleInputEmail1">Livrable</label>
+
+                                <input name="Modalités pédagogiques" type="text" class="form-control"
+                                    id="exampleInputEmail1" placeholder="livrable">
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary" id="add-livrableBtn">Confirmé</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- validation modal  -->
+                <div class="modal fade" id="validate-task" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Validation</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="livrable">Remarque</label>
+                                    <input type="text" class="form-control" placeholder="Remarque">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="livrable">Etat</label>
+                                    <select name="web-list[]" id="web-list1" class="form-control">
+                                        <option value="valide">valide</option>
+                                        <option value="unvalide">unvalide</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary" id="add-livrableBtn">Confirmé</button>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
         </div>

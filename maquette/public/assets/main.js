@@ -62,6 +62,9 @@ import "../../node_modules/admin-lte/dist/js/adminlte.min.js";
 const boardClasses = ["issue_mention", "en_cours", "envalidation", "done"];
 const draggables = document.querySelectorAll(".draggable");
 const containers = document.querySelectorAll(".parent-div");
+const workflowMethod = document.getElementById("workflowMethod");
+const addLivrableBtn = document.getElementById("add-livrableBtn");
+const livrableModal = document.getElementById("add-livrable");
 
 draggables.forEach((draggable) => {
   draggable.addEventListener("dragstart", () => {
@@ -80,7 +83,9 @@ containers.forEach((container) => {
     if (elementPlacement == null) {
       container.appendChild(draggable);
       const parentElement = container.parentElement;
-      const title = parentElement.querySelector(".project-column-heading__title");
+      const title = parentElement.querySelector(
+        ".project-column-heading__title"
+      );
       const cardElement = draggable.querySelector("a");
       const changedDate = draggable.querySelector(".changedAt");
       const currentDate = new Date();
@@ -113,7 +118,9 @@ containers.forEach((container) => {
     } else {
       container.insertBefore(draggable, elementPlacement);
       const parentElement = container.parentElement;
-      const title = parentElement.querySelector(".project-column-heading__title");
+      const title = parentElement.querySelector(
+        ".project-column-heading__title"
+      );
       const cardElement = draggable.querySelector("a");
       const changedDate = draggable.querySelector(".changedAt");
       const currentDate = new Date();
@@ -193,4 +200,13 @@ for (let i = 0; i < members.length; i++) {
   <span class="badge bg-secondary">2</span>
 </div>
     `;
+}
+if (workflowMethod != null) {
+  workflowMethod.addEventListener("change", () => {
+    if (workflowMethod.value === "WaterFall") {
+      window.location.href = "waterfall/tasks/index.php";
+    } else {
+      window.location.href = "../../index.php";
+    }
+  });
 }

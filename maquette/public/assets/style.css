@@ -357,6 +357,12 @@
     bottom: 0;
     color: var(--text);
   }
+  .task__livrable-todo {
+    width: 25px;
+    height: 25px;
+    padding-left: 7px;
+    padding-top: 4px; border:1px dashed gray;
+  }
   
   .task-hover {
     border: 3px dashed var(--light-grey) !important;
