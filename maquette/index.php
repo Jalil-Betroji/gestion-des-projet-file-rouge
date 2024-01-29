@@ -18,9 +18,9 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Connectez-vous pour commencer votre session</p>
 
-        <form action="public/home.php" method="post">
+        <div>
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="E-mail">
+            <input type="email" class="form-control" placeholder="E-mail" id="email">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -46,11 +46,11 @@
             </div>
             <!-- /.col -->
             <div class="col-5">
-              <button type="submit" class="btn btn-primary btn-block">Se Connecter</button>
+              <button type="submit" class="btn btn-primary btn-block" id="sign-in">Se Connecter</button>
             </div>
             <!-- /.col -->
           </div>
-        </form>
+        </div>
 
         <div class="social-auth-links text-center mb-3">
           <p>- OU -</p>
@@ -73,6 +73,20 @@
   <!-- /.login-box -->
   <script src="https://kit.fontawesome.com/ad59909c53.js" crossorigin="anonymous"></script>
   <script type='module' src="public/assets/main.js"></script>
+  <script>
+    const signInBtn = document.getElementById('sign-in');
+    const signInValue =document.getElementById('email');
+    signInBtn.addEventListener('click' , ()=> {
+       if(signInValue.value === "teacher@gmail.com" && signInValue.value !== ""){
+        console.log('jalil');
+      window.location.href = 'public/home.php';
+    }else{
+      console.log(signInValue);
+      window.location.href = 'public/apprenant/home.php';
+    }
+    })
+   
+  </script>
 
 </body>
 

@@ -100,7 +100,7 @@
                         <li class="nav-item">
                             <a href="teams/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Taches</p>
+                                <p>Tâches</p>
                             </a>
                         </li>
                     </ul>
