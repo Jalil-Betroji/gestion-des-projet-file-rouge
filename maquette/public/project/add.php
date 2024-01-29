@@ -52,7 +52,7 @@
                             <a href="../tasks/index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                Tâches
+                                    Tâches
                                 </p>
                             </a>
                         </li>
@@ -116,7 +116,7 @@
                                     <h3 class="card-title">Ajouter un projet</h3>
                                 </div>
                                 <form>
-                                    <div class="card-body">
+                                    <div class="card-body" id="addProjectForm">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Nom</label>
                                             <input name="nom" type="text" class="form-control" id="exampleInputEmail1"
@@ -208,6 +208,17 @@
                                             <input name="date" type="date" class="form-control" id="exampleInputEmail1"
                                                 placeholder="Date de fin">
                                         </div>
+                                        <div class="form-group" id="sprintToAppendOn">
+                                            <label for="livrable">Sprints(Optionnelle)</label>
+                                            <select name="sprint" id="sprint" class="form-control">
+                                                <option value="Choisir le nombre de sprints" selected>Choisir le nombre
+                                                    de sprints</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
                                         <form>
                                             <div class="form-group">
                                                 <label for="imageInput">Choose Image</label>
@@ -256,6 +267,57 @@
         quill1.on('text-change', function () {
             document.getElementById('referenceContent1').value = quill.root.innerHTML;
         });
+    </script>
+    <script>
+        const sprintBtn = document.getElementById('sprint');
+        const addProjectForm = document.getElementById('addProjectForm');
+        const sprintToAppendOn = document.getElementById('sprintToAppendOn');
+
+        sprintBtn.addEventListener('change', () => {
+            // Clear existing content under sprintToAppendOn
+            sprintToAppendOn.innerHTML = '';
+
+            for (let i = 1; i <= sprintBtn.value; i++) {
+                // Create elements
+                const nameLabel = document.createElement('label');
+                nameLabel.setAttribute('for', `exampleInputEmail1-${i}`);
+                nameLabel.textContent = `Nom de sprint ${i}`;
+
+                const nameInput = document.createElement('input');
+                nameInput.setAttribute('name', 'nom');
+                nameInput.setAttribute('type', 'text');
+                nameInput.setAttribute('class', 'form-control');
+                nameInput.setAttribute('id', `exampleInputEmail1-${i}`);
+                nameInput.setAttribute('placeholder', 'Nom');
+
+                const descriptionLabel = document.createElement('label');
+                descriptionLabel.setAttribute('for', `description-${i}`);
+                descriptionLabel.textContent = `Sprint ${i} Description`;
+
+                const descriptionTextarea = document.createElement('textarea');
+
+                const formGroup1 = document.createElement('div');
+                formGroup1.setAttribute('class', 'form-group');
+                formGroup1.appendChild(nameLabel);
+                formGroup1.appendChild(nameInput);
+
+                const formGroup2 = document.createElement('div');
+                formGroup2.setAttribute('class', 'form-group');
+                descriptionTextarea.setAttribute('id', `sprint${i}`)
+                formGroup2.appendChild(descriptionLabel);
+                formGroup2.appendChild(descriptionTextarea);
+
+                // Append form groups to sprintToAppendOn
+                sprintToAppendOn.appendChild(formGroup1);
+                sprintToAppendOn.appendChild(formGroup2);
+                tinymce.init({
+                    selector: `#sprint${i}`,
+                    // Other TinyMCE configurations...
+                });
+            }
+        });
+
+
     </script>
     <script>
         tinymce.init({
