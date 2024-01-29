@@ -33,22 +33,16 @@
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../project/index.php" class="nav-link active">
+                            <li class="nav-item">
+                                    <a href="index.php" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../projects/web/index.php" class="nav-link">
+                                    <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Web</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../projects/mobile/index.php" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Mobiles</p>
+                                        <p>Gestion des projets</p>
                                     </a>
                                 </li>
 

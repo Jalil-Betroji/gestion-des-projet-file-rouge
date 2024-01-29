@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
 <?php include_once '../layouts/head.php' ?>
 
 <body class="hold-transition sidebar-mini">
@@ -25,7 +23,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item active menu-open">
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -35,7 +33,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="index.php" class="nav-link active">
+                                    <a href="index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
@@ -43,42 +41,31 @@
                                 <li class="nav-item">
                                     <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Gestion des projets</p>
+                                        <p>Réalisation</p>
                                     </a>
                                 </li>
 
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a href="../members/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Membres
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../teams/index.php" class="nav-link">
+                            <a href="teams/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Équipes</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Labels
-                                </p>
+                            <a href="teams/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Taches</p>
                             </a>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
-
 
         <div class="content-wrapper" style="min-height: 1302.4px;">
             <div class="content-header">
@@ -88,8 +75,8 @@
                             <h1>Détails de projet</h1>
                         </div>
                         <div class="col-sm-6">
-                            <a href="edit.php" class="btn btn-default float-right"><i class="far fa-edit"></i>
-                                Modifier</a>
+                            <a href="index.php" class="btn btn-default float-right"><i class="far fa-edit"></i>
+                                Reteur</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +97,6 @@
                                                 <h3>Développer les interfaces de l'application de suivi budgétaire</h3>
                                             </div>
                                             <div class="col-12">
-
                                                 <div>
                                                     <button class="btn bg-assignee">Assignée</button>
                                                     <div class="d-flex my-3">
@@ -121,7 +107,6 @@
                                                             <p class="creationDate">créé : 25/04/23</p>
                                                         </div>
                                                     </div>
-
                                                 </div>
 
                                                 <p>Ce brief a pour objectif de créer une application de suivi de budget
@@ -171,7 +156,6 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-
                                             </div>
                                         </div>
                                     </div>
@@ -189,14 +173,12 @@
                                                     </div>
                                                 </li>
                                             </ul>
-
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-
                                             <h3>Références</h3>
                                             <div class="col-12">
                                                 <ul class="d-flex projectShowUl">
@@ -211,14 +193,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-
                                             <h3>Contexte de projet</h3>
                                             <div class="col-12">
                                                 <h3><strong>Fonctionnalités élémentaires :</strong></h3>
@@ -235,12 +215,8 @@
                                                     dépenses et identifier les domaines où il peut économiser.
                                                     Suivi du budget : l'application peut aider l'utilisateur à suivre
                                                     l'évolution de son budget.</p>
-
                                                 <h3><strong>Interfaces :</strong></h3>
-
-
                                                 <strong>++Page d'accueil :++</strong>
-
                                                 <p>La page d'accueil affiche un aperçu rapide du solde actuel de
                                                     l'utilisateur, ainsi que le total des dépenses et le total des
                                                     revenus.
@@ -260,8 +236,6 @@
                                                     par
                                                     catégorie et par type sous forme tabulaire ou graphique.
                                                 </p>
-
-
                                             </div>
 
                                         </div>
@@ -291,7 +265,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="card w-25" style="height: 100vh;">
                                 <div class="card-body">
@@ -303,17 +276,14 @@
                                                 <ol>
                                                     <li>
                                                         <span>niveau 1
-
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>niveau 2
-
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>niveau 3
-
                                                         </span>
                                                     </li>
                                                 </ol>
@@ -323,18 +293,18 @@
                                                 </p>
                                                 <ol>
                                                     <li>
-                                                        <span>niveau 1
-
+                                                        <span>
+                                                            niveau 1
                                                         </span>
                                                     </li>
                                                     <li>
-                                                        <span>niveau 2
-
+                                                        <span>
+                                                            niveau 2
                                                         </span>
                                                     </li>
                                                     <li>
-                                                        <span>niveau 3
-
+                                                        <span>
+                                                            niveau 3
                                                         </span>
                                                     </li>
                                                 </ol>
@@ -343,14 +313,10 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
         </div>
         </section>
-
     </div>
-
     </div>
     <?php include_once '../layouts/footer.php' ?>

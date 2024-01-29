@@ -2,12 +2,11 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <?php include_once '../layouts/nav.php' ?>
-
+        <?php include_once './layouts/nav.php' ?>
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="home.php" class="brand-link d-flex flex-column align-items-center">
+            <a href="home.php" class="brand-link d-flex flex-column align-items-center text-decoration-none">
                 <img src="/public/assets/imgs/solicode_tanger_cover.jpg" alt="AdminLTE Logo" class="brand-image"
                     style="opacity: .8">
                 <p class="brand-text font-weight-light">Gestion des Projets</p>
@@ -22,7 +21,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item active menu-open">
+                        <li class="nav-item menu-open">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -32,7 +31,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../project/index.php" class="nav-link">
+                                    <a href="index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
@@ -40,35 +39,25 @@
                                 <li class="nav-item">
                                     <a href="projectManagment.php" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Gestion des projets</p>
+                                        <p>Réalisation</p>
                                     </a>
                                 </li>
 
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a href="../members/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Membres
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../teams/index.php" class="nav-link">
+                            <a href="teams/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Équipes</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Labels
-                                </p>
+                            <a href="teams/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Taches</p>
                             </a>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -162,159 +151,7 @@
                                     </button> -->
                                 </div>
                                 <div class="project-tasks border-top">
-                                    <div class="project-column mx-2 my-2">
-                                        <div class="btn-group my-2">
-                                            <button type="button" class="btn btn-default">
-                                                Assignées
-                                            </button>
-                                        </div>
-                                        <div class="card p-3 membersList">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">Betroji Jalil</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">Ben NASAR Adnan</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">ACHOUA Hamid</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">Boukhar Soufiane</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">Lamchatab Amin</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">LHARAK Adnan</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">BOUIK Hussien</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">ZAANI Hamza</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">GRAIN Reda</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">SARSRI Imrane</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">ASSAID Amina</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">DAIFANE Yasmine</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div>
-                                                        <img src="../assets/imgs/25231.png" alt=""
-                                                            style="width: 20px; height: 20px;" class="rounded-circle">
-                                                    </div>
-                                                    <h3 class="ml-1 mb-0">FAIZ Safae</h3>
-                                                </div>
-                                                <span class="badge bg-secondary">2</span>
-                                            </div>
-                                            <hr class="my-3">
-                                        </div>
-                                    </div>
-                                    <div class="project-column-todo fullBoardContainer">
+                                    <div class="project-column-todo-user fullBoardContainer">
                                         <div class='project-column-todo-1 mt-2 my-2 customTableBackground'>
                                             <div class='project-column-heading my-2'>
                                                 <h2 class='project-column-heading__title'>À Faire</option>

@@ -71,7 +71,6 @@
     </div>
   </div>
   <!-- /.login-box -->
-
   <script src="https://kit.fontawesome.com/ad59909c53.js" crossorigin="anonymous"></script>
   <script type='module' src="public/assets/main.js"></script>
 

@@ -1,7 +1,6 @@
 <?php include_once '../layouts/head.php' ?>
 
-<body class="hold-transition sidebar-mini">
-    <!-- Site wrapper -->
+<body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Navbar -->
         <?php include_once '../layouts/nav.php' ?>
@@ -26,7 +25,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item active menu-open">
+                    <li class="nav-item active menu-open">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -44,43 +43,31 @@
                                 <li class="nav-item">
                                     <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Gestion des projets</p>
+                                        <p>Réalisation</p>
                                     </a>
                                 </li>
 
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a href="../members/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Membres
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../teams/index.php" class="nav-link">
+                            <a href="teams/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Équipes</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Labels
-                                </p>
+                            <a href="teams/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Taches</p>
                             </a>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
-
-
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -92,19 +79,6 @@
                         </div>
                         <div class="col-sm-6">
 
-                            <div class="input-group w-50 float-sm-right">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="projectFilter">
-                                        <i class="fa-solid fa-network-wired"></i>
-                                    </label>
-                                </div>
-
-                                <select class="custom-select" id="workflowMethod">
-                                    <option selected disabled>Methode de travaile</option>
-                                    <option value="WaterFall">WaterFall</option>
-                                    <option value="Méthode agile">Méthode agile</option>
-                                </select>
-                            </div>
 
                         </div>
                     </div>
@@ -115,15 +89,7 @@
             <!-- Main content -->
             <section class="content">
                 <div class="content-header">
-                    <div class="container-fluid">
-                        <div class="row mb-2">
-                            <div class="col-sm-12">
-                                <div class="float-sm-right">
-                                    <a href="add.php" class="btn btn-primary">Ajouter un projet</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <!-- Default box -->
                 <div class="card">
@@ -214,4 +180,8 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <?php include_once '../layouts/footer.php' ?>
+
+    </div>
+    <!-- ./wrapper -->
+
+    <?php include_once '../layouts/footer.php' ?>

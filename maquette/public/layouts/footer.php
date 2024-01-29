@@ -11,7 +11,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr"></script>
 <script src="https://cdn.tiny.cloud/1/j9fgvnzkpnwd9wtcot805rolqir70j4v4w28bpz6oxl1klka/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </body>
 
 </html>

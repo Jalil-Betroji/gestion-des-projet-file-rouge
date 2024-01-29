@@ -1,67 +1,54 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php include_once '../layouts/head.php' ?>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gestion des projets</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <?php include_once '../layouts/head.php' ?>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    .circular-progress {
+        position: relative;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+    }
 
-    <style>
-        .circular-progress {
-            position: relative;
-            height: 250px;
-            width: 250px;
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-        }
+    .statistique-card {
+        position: relative;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid rgba(0, 0, 0, .125);
+        border-radius: 0.25rem;
+        padding: 1rem;
+    }
 
-        .statistique-card {
-            position: relative;
-            min-width: 0;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-            border: 0 solid rgba(0, 0, 0, .125);
-            border-radius: 0.25rem;
-            padding: 1rem;
-        }
+    .circular-progress:before {
+        content: "";
+        position: absolute;
+        height: 75%;
+        width: 75%;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
 
-        .circular-progress:before {
-            content: "";
-            position: absolute;
-            height: 75%;
-            width: 75%;
-            background-color: #ffffff;
-            border-radius: 50%;
-        }
+    .value-container {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-size: 50px;
+        color: #231c3d;
+    }
 
-        .value-container {
-            position: relative;
-            font-family: "Poppins", sans-serif;
-            font-size: 50px;
-            color: #231c3d;
-        }
-
-        .user-icon {
-            padding: 0.8rem;
-        }
-    </style>
-
-</head>
+    .user-icon {
+        padding: 0.8rem;
+    }
+</style>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Navbar -->
-        <?php include_once 'layouts/nav.php' ?>
+        <?php include_once '../layouts/nav.php' ?>
 
-        <!-- /.navbar -->
 
-        <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="home.php" class="brand-link d-flex flex-column align-items-center text-decoration-none">
@@ -79,7 +66,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -89,28 +76,21 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="project/index.php" class="nav-link">
+                                    <a href="index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tous les Projets</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="project/projectManagment.php" class="nav-link">
+                                    <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Gestion des projets</p>
+                                        <p>Réalisation</p>
                                     </a>
                                 </li>
 
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="members/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Membres
-                                </p>
-                            </a>
-                        </li>
+
                         <li class="nav-item">
                             <a href="teams/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -118,29 +98,29 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="labels/index.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Labels
-                                </p>
+                            <a href="teams/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Taches</p>
                             </a>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="d-flex col-sm-6">
-                            <span class="user-icon rounded-circle bg-indigo mr-2">EF</span>
+                            <span class="user-icon rounded-circle bg-indigo mr-2">JB</span>
                             <div>
                                 <span class="d-flex flex-column">
-                                    <span>Bonjour <strong>ESSARAJE Fouad</strong></span>
+                                    <span>Bonjour <strong>BETROJI Jalil</strong></span>
 
                                     <span>Bienvenu sur solicode</span>
                                 </span>
@@ -156,9 +136,9 @@
                     <div class="card">
                         <div class="card-body p-0">
                             <h1 class="m-3">Ma promo</h1>
-                            <div class="row ml-3">
+                            <div class="row">
                                 <div class="col-md-4">
-                                    <img src="assets/imgs/S.png" alt="Solicoders Logo"
+                                    <img src="../assets/imgs/S.png" alt="Solicoders Logo"
                                         style="width:10rem;height:15rem;">
                                 </div>
                                 <div class="col-md-6 row">
@@ -202,7 +182,7 @@
                                     <div class="value-container" id="project-value">0%</div>
                                 </div>
                                 <div class="text-center">
-                                    <a class="btn btn-primary w-75 mt-3">Projets terminés</a>
+                                    <a class="btn btn-primary w-75 mt-3">Projets validées</a>
                                 </div>
                             </div>
 
@@ -223,7 +203,7 @@
                                     <div class="value-container" id="pfe-value">0%</div>
                                 </div>
                                 <div class="text-center">
-                                    <a class="btn btn-primary w-75 mt-3">Réussite de Promo</a>
+                                    <a class="btn btn-primary w-75 mt-3">Mon taux de réussite</a>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +215,7 @@
                         <h1 class="m-3">Les projets de ma promo</h1>
                         <div class="d-flex justify-content-around gap-3 px-3">
                             <div class="card p-0 rounded w-100">
-                                <img src="assets/imgs/project.jpg" alt="" class="img-fluid rounded-top"
+                                <img src="../assets/imgs/project.jpg" alt="" class="img-fluid rounded-top"
                                     style="height:200px;">
                                 <h2 class="p-2">CNMH</h2>
                                 <p class="p-2">Développer une application web qui répond aux 6 compétences visées du
@@ -243,7 +223,7 @@
 
                             </div>
                             <div class="card p-0 rounded w-100">
-                                <img src="assets/imgs/project.jpg" alt="" class="img-fluid rounded-top"
+                                <img src="../assets/imgs/project.jpg" alt="" class="img-fluid rounded-top"
                                     style="height:200px;">
                                 <h2 class="p-2">LMS</h2>
                                 <p class="p-2">Ce projet a pour objectif de créer une application de suivi de budget en
@@ -251,7 +231,7 @@
 
                             </div>
                             <div class="card P-0 rounded w-100">
-                                <img src="assets/imgs/project.jpg" alt="" class="img-fluid rounded-top"
+                                <img src="../assets/imgs/project.jpg" alt="" class="img-fluid rounded-top"
                                     style="height:200px;">
                                 <h2 class="p-2">E-Commerce</h2>
                                 <p class="p-2">Il s'agit de créer un plugin WordPress permettant de créer et
@@ -268,23 +248,9 @@
             </section>
         </div>
 
-    </div>
-    <!-- ./wrapper -->
-    <footer class="main-footer">
-        <div class="float-right d-none d-sm-block">
-            <b>Version</b> 3.2.0
-        </div>
-        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-        reserved.
-    </footer>
-    <script src="../node_modules/admin-lte/plugins/jquery/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/ad59909c53.js" crossorigin="anonymous"></script>
-    <script type='module' src="assets/main.js"></script>
+        <?php include_once '../layouts/footer.php' ?>
 
-    <script src="assets/statistique.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+        <script src="../assets/statistique.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
