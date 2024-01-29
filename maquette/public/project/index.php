@@ -51,6 +51,14 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a href="../tasks/index.php" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                Tâches
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="../members/index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>

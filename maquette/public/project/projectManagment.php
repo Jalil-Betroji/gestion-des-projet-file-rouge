@@ -3,7 +3,11 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <?php include_once '../layouts/nav.php' ?>
-
+        <style>
+            .content-wrapper.kanban {
+                height: 100%;
+            }
+        </style>
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -45,6 +49,14 @@
                                 </li>
 
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../tasks/index.php" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                Tâches
+                                </p>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="../members/index.php" class="nav-link">
@@ -90,34 +102,43 @@
                                 <li class="breadcrumb-item active">Projet 1</li>
                             </ol>
                         </div>
-                        <div class="input-group w-25 mt-4 mr-2">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text" for="projectFilter">
-                                    <i class="fa-solid fa-filter text-dark pr-2"></i>
-                                </label>
+                        <div class="row w-100">
+                            <div class="input-group w-25 mt-4 col-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="projectFilter">
+                                        <i class="fa-solid fa-filter text-dark pr-2"></i>
+                                    </label>
+                                </div>
+                                <select class="custom-select" id="projectFilter">
+                                    <option selected disabled>Filtrer par projet</option>
+                                    <option value="projet3">Projet 1</option>
+                                    <option value="projet3">Projet 2</option>
+                                    <option value="projet2">Projet 3</option>
+                                    <option value="projet2">Projet 4</option>
+                                </select>
                             </div>
-                            <select class="custom-select" id="projectFilter">
-                                <option selected disabled>Filtrer par projet</option>
-                                <option value="projet3">Projet 1</option>
-                                <option value="projet3">Projet 2</option>
-                                <option value="projet2">Projet 3</option>
-                                <option value="projet2">Projet 4</option>
-                            </select>
-                        </div>
-                        <div class="input-group w-25 mt-4">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text" for="projectFilter">
-                                    <i class="fa-solid fa-shoe-prints"></i>
-                                </label>
+                            <div class="input-group w-25 mt-4 col-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="projectFilter">
+                                        <i class="fa-solid fa-shoe-prints"></i>
+                                    </label>
+                                </div>
+                                <select class="custom-select" id="projectFilter">
+                                    <option selected disabled>Filtrer par sprint</option>
+                                    <option value="sprint3">sprint 1</option>
+                                    <option value="sprint3">sprint 2</option>
+                                    <option value="sprint2">sprint 3</option>
+                                    <option value="sprint2">sprint 4</option>
+                                </select>
                             </div>
-                            <select class="custom-select" id="projectFilter">
-                                <option selected disabled>Filtrer par sprint</option>
-                                <option value="sprint3">sprint 1</option>
-                                <option value="sprint3">sprint 2</option>
-                                <option value="sprint2">sprint 3</option>
-                                <option value="sprint2">sprint 4</option>
-                            </select>
+                            <div class="col-6">
+                                <div class="float-sm-right mt-4">
+                                    <a class="btn btn-primary" data-toggle="modal" data-target="#add-task">Ajouter une
+                                        tâche</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -754,7 +775,91 @@
                     </div>
 
                 </div>
+                <!-- add task modal -->
+                <div class="modal fade" id="add-task" aria-hidden="true" style="display: none;">
+                <style>
+                    .select2-container{
+                        display: block;
+                    }
+                </style>
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Ajouter une tâche</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="livrable">Nom</label>
+                                    <input type="text" class="form-control" placeholder="Nom">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="livrable">Description</label>
+                                    <textarea></textarea>
+                                </div>
+                                <div class="form-group">
+                                            <label for="exampleInputPassword1">Asignées</label>
+                                            <select name="nom" id="selectMembers" class="form-control"
+                                                multiple>
+                                            <option value="BETROJI Jalil">BETROJI Jalil</option>
+                                            <option value="BOUKHAR Soufiane">BOUKHAR Soufiane</option>
+                                            <option value="ACHOUA Hamid">ACHOUA Hamid</option>
+                                            <option value="LAMCHATAB Amine">LAMCHATAB Amine</option>
+                                            <option value="BEN NASAR Adnan">BEN NASAR Adnan</option>
+                                            </select>
+                                        </div>
+                                <div class="form-group">
+                                    <label for="livrable">Issues</label>
+                                    <select name="web-list[]" id="web-list1" class="form-control">
+                                        <option value="Issue1">Issue1</option>
+                                        <option value="Issue2">Issue2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="livrable">Priorité</label>
+                                    <select name="web-list[]" id="web-list1" class="form-control">
+                                        <option value="P0">P0</option>
+                                        <option value="P1">P1</option>
+                                        <option value="P2">P2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary" id="add-livrableBtn">Enregistrer</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </section>
         </div>
 
         <?php include_once '../layouts/footer.php' ?>
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                tinycomments_mode: 'embedded',
+                tinycomments_author: 'Author name',
+                mergetags_list: [
+                    { value: 'First.Name', title: 'First Name' },
+                    { value: 'Email', title: 'Email' },
+                ],
+                ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('#selectMembers').select2({
+                    tags: true,
+                    tokenSeparators: [',', ' '],
+                    multiple: true
+                });
+            });
+        </script>

@@ -24,7 +24,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -40,19 +40,21 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../projects/web/index.php" class="nav-link">
+                                    <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Web</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../projects/mobile/index.php" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Mobiles</p>
+                                        <p>Gestion des projets</p>
                                     </a>
                                 </li>
 
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../tasks/index.php" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Tâches
+                                </p>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="../members/index.php" class="nav-link">
@@ -130,12 +132,13 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Les membres</label>
-                                            <select name="nom" id="selectMembers" class="form-control" multiple></select>
+                                            <select name="nom" id="selectMembers" class="form-control"
+                                                multiple></select>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Projet</label>
-                                            <select name="nom" id="selectProject" class="form-control" ></select>
+                                            <select name="nom" id="selectProject" class="form-control"></select>
                                         </div>
 
                                     </div>

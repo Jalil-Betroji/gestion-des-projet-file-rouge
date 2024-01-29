@@ -40,15 +40,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../projects/web/index.php" class="nav-link">
+                                    <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Web</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../projects/mobile/index.php" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Mobiles</p>
+                                        <p>Gestion des projets</p>
                                     </a>
                                 </li>
 
@@ -96,7 +90,7 @@
         <div class="content-wrapper" style="min-height: 1302.4px;">
 
             <div class="content-header">
-            <div class="container-fluid">
+                <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
                         </div>
@@ -115,7 +109,7 @@
 
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Modifier une tâche</h3>
+                                    <h3 class="card-title">Ajouter une tâche</h3>
                                 </div>
                                 <form>
                                     <div class="card-body">
@@ -128,20 +122,19 @@
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Description</label>
                                             <textarea>
-                                           
+
                                             </textarea>
-                                       </div>
+                                        </div>
 
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Asignées</label>
-                                            <select name="nom" id="selectMembers" class="form-control"
-                                                multiple>
-                                            <option value="BETROJI Jalil">BETROJI Jalil</option>
-                                            <option value="BOUKHAR Soufiane">BOUKHAR Soufiane</option>
-                                            <option value="ACHOUA Hamid">ACHOUA Hamid</option>
-                                            <option value="LAMCHATAB Amine">LAMCHATAB Amine</option>
-                                            <option value="BEN NASAR Adnan">BEN NASAR Adnan</option>
+                                            <select name="nom" id="selectMembers" class="form-control" multiple>
+                                                <option value="BETROJI Jalil">BETROJI Jalil</option>
+                                                <option value="BOUKHAR Soufiane">BOUKHAR Soufiane</option>
+                                                <option value="ACHOUA Hamid">ACHOUA Hamid</option>
+                                                <option value="LAMCHATAB Amine">LAMCHATAB Amine</option>
+                                                <option value="BEN NASAR Adnan">BEN NASAR Adnan</option>
                                             </select>
                                         </div>
 

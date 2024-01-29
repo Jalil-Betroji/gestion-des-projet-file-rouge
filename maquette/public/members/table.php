@@ -10,7 +10,7 @@
             <th class="text-center" style="width: 20%">
                 Date de naissence
             </th>
-            <th style="width: 20%">
+            <th style="width: 10%">
                 Adress
             </th>
             <th class="text-center" style="width: 10%" class="text-center">
@@ -21,6 +21,9 @@
             </th>
             <th class="text-center" style="width: 10%">
                 Telephone
+            </th>
+            <th class="text-center" style="width: 5%">
+                Scrum
             </th>
             <th class="text-center" style="width: 10%">
                 Action

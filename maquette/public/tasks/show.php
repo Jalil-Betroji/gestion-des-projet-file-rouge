@@ -41,15 +41,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../projects/web/index.php" class="nav-link">
+                                    <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Web</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../projects/mobile/index.php" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Mobiles</p>
+                                        <p>Gestion des projets</p>
                                     </a>
                                 </li>
 
@@ -157,7 +151,8 @@
                                             <div class="member_desc">
                                                 <h4>Issues liés</h4>
                                                 <div class="d-flex">
-                                                    <p class="mr-2">Besoin</p><span><a href="../issues/show.php">#3</a></span>
+                                                    <p class="mr-2">Besoin</p><span><a
+                                                            href="../issues/show.php">#3</a></span>
                                                 </div>
                                             </div>
 

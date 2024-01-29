@@ -141,6 +141,9 @@ function displayMembers(startIndex, endIndex) {
             <td class="project-state text-center">${members[i].classroom}</td>
             <td class="project-actions text-center">${members[i].classroom}</td>
             <td>${members[i].phoneNumber}</td>
+            <td class="project-state text-center">
+            <input type="checkbox">
+            </td>
             <td class="project-actions text-center">
                 <a class="btn btn-info btn-sm" href="#">
                     <i class="fa-solid fa-list-check"></i>
@@ -257,6 +260,9 @@ membersSearch.addEventListener("input", () => {
             <td class="project-state text-center">${members[i].classroom}</td>
             <td class="project-actions text-center">${members[i].classroom}</td>
             <td>${members[i].phoneNumber}</td>
+            <td class="project-state text-center">
+            <input type="checkbox">
+            </td>
             <td class="project-actions text-center">
                 <a class="btn btn-info btn-sm" href="#">
                     <i class="fa-solid fa-list-check"></i>
