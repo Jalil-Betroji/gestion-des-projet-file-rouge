@@ -40,25 +40,19 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../projects/web/index.php" class="nav-link">
+                                    <a href="projectManagment.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Web</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../projects/mobile/index.php" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projets Mobiles</p>
+                                        <p>Gestion des projets</p>
                                     </a>
                                 </li>
 
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link active">
+                            <a href="../tasks/index.php" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Taches
+                                    Tâches
                                 </p>
                             </a>
                         </li>
@@ -96,7 +90,7 @@
         <div class="content-wrapper" style="min-height: 1302.4px;">
 
             <div class="content-header">
-            <div class="container-fluid">
+                <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
                         </div>
@@ -128,20 +122,19 @@
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Description</label>
                                             <textarea>
-                                           
+
                                             </textarea>
-                                       </div>
+                                        </div>
 
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Asignées</label>
-                                            <select name="nom" id="selectMembers" class="form-control"
-                                                multiple>
-                                            <option value="BETROJI Jalil">BETROJI Jalil</option>
-                                            <option value="BOUKHAR Soufiane">BOUKHAR Soufiane</option>
-                                            <option value="ACHOUA Hamid">ACHOUA Hamid</option>
-                                            <option value="LAMCHATAB Amine">LAMCHATAB Amine</option>
-                                            <option value="BEN NASAR Adnan">BEN NASAR Adnan</option>
+                                            <select name="nom" id="selectMembers" class="form-control" multiple>
+                                                <option value="BETROJI Jalil">BETROJI Jalil</option>
+                                                <option value="BOUKHAR Soufiane">BOUKHAR Soufiane</option>
+                                                <option value="ACHOUA Hamid">ACHOUA Hamid</option>
+                                                <option value="LAMCHATAB Amine">LAMCHATAB Amine</option>
+                                                <option value="BEN NASAR Adnan">BEN NASAR Adnan</option>
                                             </select>
                                         </div>
 
@@ -161,7 +154,7 @@
                                                 <option value="P2">P2</option>
                                             </select>
                                         </div>
-                                        
+
 
                                     </div>
 

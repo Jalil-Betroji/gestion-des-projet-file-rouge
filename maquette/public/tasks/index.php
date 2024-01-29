@@ -53,7 +53,7 @@
                             <a href="../tasks/index.php" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Taches
+                                Tâches
                                 </p>
                             </a>
                         </li>

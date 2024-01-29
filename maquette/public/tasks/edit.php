@@ -24,7 +24,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
-                    <li class="nav-item">
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -49,10 +49,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="../labels/index.php" class="nav-link active">
+                            <a href="../tasks/index.php" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Taches
+                                    Tâches
                                 </p>
                             </a>
                         </li>
