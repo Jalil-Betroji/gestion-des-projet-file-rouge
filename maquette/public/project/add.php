@@ -272,6 +272,8 @@
         const sprintBtn = document.getElementById('sprint');
         const addProjectForm = document.getElementById('addProjectForm');
         const sprintToAppendOn = document.getElementById('sprintToAppendOn');
+        const addedForm1 = document.getElementById('addedForm1');
+        const addedForm2 = document.getElementById('addedForm2');
 
         sprintBtn.addEventListener('change', () => {
             // Clear existing content under sprintToAppendOn
@@ -306,13 +308,15 @@
                 descriptionTextarea.setAttribute('id', `sprint${i}`)
                 formGroup2.appendChild(descriptionLabel);
                 formGroup2.appendChild(descriptionTextarea);
-
-                // Append form groups to sprintToAppendOn
-                sprintToAppendOn.appendChild(formGroup1);
-                sprintToAppendOn.appendChild(formGroup2);
+                formGroup1.setAttribute('id', 'addedForm1');
+                formGroup2.setAttribute('id', 'addedForm2');
+                if (addedForm1 && addedForm2) {
+                    addProjectForm.removeChild(addedForm1, addedForm2);
+                }
+                sprintToAppendOn.insertAdjacentElement('afterend', formGroup1);
+                sprintToAppendOn.insertAdjacentElement('afterend', formGroup2);
                 tinymce.init({
                     selector: `#sprint${i}`,
-                    // Other TinyMCE configurations...
                 });
             }
         });
