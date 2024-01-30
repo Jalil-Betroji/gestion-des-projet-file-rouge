@@ -9,7 +9,7 @@
         <!-- aside -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="home.php" class="brand-link d-flex flex-column align-items-center">
+            <a href="../home.php" class="brand-link d-flex flex-column align-items-center">
                 <img src="/public/assets/imgs/solicode_tanger_cover.jpg" alt="AdminLTE Logo" class="brand-image"
                     style="opacity: .8">
                 <p class="brand-text font-weight-light">Gestion des Projets</p>

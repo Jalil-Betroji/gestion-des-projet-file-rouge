@@ -11,7 +11,7 @@
 <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="../../index2.html"><b>Admin</b>LTE</a>
+      <a href="../../index2.html"><b>Gestion Des</b>Projets</a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
@@ -80,7 +80,8 @@
        if(signInValue.value === "teacher@gmail.com" && signInValue.value !== ""){
         console.log('jalil');
       window.location.href = 'public/home.php';
-    }else{
+    }
+    if(signInValue.value === ""){
       console.log(signInValue);
       window.location.href = 'public/apprenant/home.php';
     }
